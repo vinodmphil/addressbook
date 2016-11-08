@@ -39,6 +39,7 @@ class QtContactForm : public QFormLayout
         QLineEdit *phoneNumberField;
         QLineEdit *emailField;
 
+ QLineEdit *cityField;
 };
 
 #endif

@@ -10,13 +10,15 @@ QtContactForm::QtContactForm(QWidget *parent) :
         lastNameField(new QLineEdit()),
         addressField(new QLineEdit()),
         phoneNumberField(new QLineEdit()),
-        emailField(new QLineEdit())
+        emailField(new QLineEdit()),
+        cityField(new QLineEdit())
 {
     addRow("First Name", firstNameField);
     addRow("Last Name", lastNameField);
     addRow("Address", addressField);
     addRow("Phone Number", phoneNumberField);
     addRow("Email", emailField);
+    addRow("City", cityField);
 }
 
 void QtContactForm::clear()
@@ -26,4 +28,5 @@ void QtContactForm::clear()
     addressField->setText("");
     phoneNumberField->setText("");
     emailField->setText("");
+    cityField->setText("");
 }
